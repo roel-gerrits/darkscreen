@@ -15,6 +15,6 @@ Which should darken your second monitor.
 
 You can adjust the amount of transparancy by using the -t option.
 
-# darkscreen -t 128
+$ darkscreen -t 128
 
 This fades to a transparancy of 50%, you can use any value between 0 and 255, where 0 is fully transparant, and 255 is fully black.
