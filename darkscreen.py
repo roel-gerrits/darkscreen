@@ -1,19 +1,13 @@
-
-
 import wx
 import argparse
-import os
 
 class DarkscreenFrame(wx.Frame)  :
 
     def __init__(self)  :
 
-        wx.Frame.__init__(self, None, title="Am I transparent?",
+        wx.Frame.__init__(self, None,
                            style=wx.STAY_ON_TOP | wx.NO_BORDER | wx.FRAME_NO_TASKBAR)
                
-        
-        
-
         self.SetBackgroundStyle(wx.BG_STYLE_COLOUR)
         self.SetBackgroundColour('black')
         self.SetTransparent(0)
