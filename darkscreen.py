@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 import wx
 import argparse
 
@@ -140,9 +142,9 @@ if __name__ == '__main__' :
     
     
     parser = argparse.ArgumentParser()
-    parser.description = "description"
+    parser.description = "A simple utility to darken one of your monitors."
     
-    parser.add_argument("-m", "--monitor", type=int, default=0, help = "The monitor that should be darkened")
+    parser.add_argument("-m", "--monitor", type=int, default=0, help = "The monitor that should be darkened, 0 for first, 1 for second, etc.")
     parser.add_argument("-t", "--transparency", type=int, default = 220, help="The final transparency to which it will fade, range from 0 to 255")
     
     args = parser.parse_args()
@@ -162,5 +164,5 @@ if __name__ == '__main__' :
         
         dk.mainloop()
     except RuntimeError as e:
-        print e.message
+        print (e.message)
         
